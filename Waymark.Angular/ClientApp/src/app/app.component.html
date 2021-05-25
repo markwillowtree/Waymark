@@ -1,0 +1,26 @@
+<div>
+  <table>
+    <thead>
+      <tr>
+        <td>Id</td>
+        <td>Age</td>
+        <td>Name</td>
+      </tr>
+    </thead>
+    <tr *ngFor="let person of filteredPeople">
+      <td>{{person.id}}</td>
+      <td>{{person.age}}</td>
+      <td>{{person.name}}</td>
+    </tr>
+  </table>
+
+  <div>  
+    <button (click)="sortByAge()">Sort by age</button>
+    <button (click)="reverseNames()">Reverse names</button>
+    <button (click)="downloadCsv()">Download File</button>
+    <button (click)="filterByAge()">Filter by age</button>
+  </div>
+
+
+  
+</div>
